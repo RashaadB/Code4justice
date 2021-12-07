@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #222;
+    background: #1B262C ;
     font-weight: 400;
     font-family: sans-serif;
 
@@ -94,7 +94,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #000;
+    color:#BBE1FA;
 }
 
 .navToggle:checked~nav {
@@ -105,10 +105,63 @@ nav a:hover {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
+@media screen and (min-width: 1300px) {
+    .navToggleLabel {
+        display: none;
+    }
+
+    .navBar {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        bottom: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+}
 
 /* Contact Form */
 #Contact{
- 
 	display: flex;
 	justify-content: center; 
 	align-items: center; 
@@ -142,14 +195,14 @@ h2 {
 .left-container {
   flex:1;
   height:480px;
-  background-color:#7267CB;
+  background-color:#3282B8;
   
 }
 .right-container {
   display:flex;
   flex:1;
   height:480px;
-  background-color: #B8E4F0;
+  background-color: #BBE1FA;
   justify-content:center;
   align-items:center;
 }
@@ -197,7 +250,7 @@ input:focus, textarea:focus{
 button {
 	border-radius: 20px;
 	border: 1px solid #B8E4F0;
-	background-color: #7267CB;
+	background-color: #3282B8;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
