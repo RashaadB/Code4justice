@@ -5,14 +5,14 @@
 }
 
 :root {
-    --background: rgba(0, 214, 170, .85);
+    --background: #3282B8;
 }
 
 body {
     margin: 0;
-    background: #222;
     font-family: sans-serif;
     font-weight: 400;
+    background-color: #1B262C;
 }
 
 /* Navigation Bar */
@@ -181,7 +181,7 @@ nav a:hover {
     font-size: 20px;
     padding: 2rem;
     border-radius: 0.5rem;
-    background-color: aqua;
+    background-color: #BBE1FA;
     margin-top: 50px;
 }
 .imageBorder {
@@ -191,6 +191,11 @@ nav a:hover {
     width: auto;
 }
 
+.flex{
+    display: flex;
+}
+
 .name {
     font-size: 20px;
+    padding-left: 10px;
 }
