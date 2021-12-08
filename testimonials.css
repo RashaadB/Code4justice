@@ -9,8 +9,7 @@
 }
 
 body {
-    margin: 0;
-    font-family: sans-serif;
+    font-family: "Open sans", sans-serif;
     font-weight: 400;
     background-color: #1B262C;
 }
@@ -24,7 +23,7 @@ body {
     width: 100%;
 }
 
-.logo{
+.logo {
     color: white;
 }
 
@@ -103,6 +102,11 @@ nav a:hover {
     color: #000;
 }
 
+nav ul li.active a {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
 .navToggle:checked~nav {
     transform: scale(1, 1);
 }
@@ -110,6 +114,51 @@ nav a:hover {
 .navToggle:checked~nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* Content */
+.testimonialGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.testimonial {
+    font-size: 20px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #BBE1FA;
+    margin-top: 50px;
+}
+
+.imageBorder {
+    border: 2px solid black;
+    border-radius: 2px solid black;
+    height: 70px;
+    width: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.status {
+    color: black;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.name {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.quote {
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 @media screen and (min-width: 1300px) {
@@ -165,37 +214,13 @@ nav a:hover {
     nav a:hover::before {
         transform: scale(1, 1);
     }
-}
 
-/* Content */
-.testimonialGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding-block: 2rem;
-    width: min(95%, 70rem);
-    margin-inline: auto;
-}
-
-.testimonial {
-    font-size: 20px;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    background-color: #BBE1FA;
-    margin-top: 50px;
-}
-.imageBorder {
-    border: 2px solid black;
-    border-radius: 2px solid black;
-    height: 70px;
-    width: auto;
-}
-
-.flex{
-    display: flex;
-}
-
-.name {
-    font-size: 20px;
-    padding-left: 10px;
+    .testimonialGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding-block: 2rem;
+        width: min(95%, 70rem);
+        margin-inline: auto;
+    }
 }
