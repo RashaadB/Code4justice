@@ -1,13 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --background: #3282b8;
 }
+
 .navBar {
   background: var(--background);
   text-align: center;
   position: fixed;
   z-index: 999;
   width: 100%;
-  top: 0;
 }
 
 .logo {
@@ -56,7 +62,7 @@
 nav {
   position: absolute;
   text-align: left;
-  top: 0;
+  top: 100%;
   left: 0;
   background: var(--background);
   width: 100%;
@@ -89,11 +95,11 @@ nav a:hover {
   color: #000;
 }
 
-.navToggle:checked ~ nav {
+.navToggle:checked~nav {
   transform: scale(1, 1);
 }
 
-.navToggle:checked ~ nav a {
+.navToggle:checked~nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
@@ -110,6 +116,12 @@ nav a:hover {
 
   .logo {
     grid-column: 2 / 3;
+  }
+
+  .navToggleLabel span,
+  .navToggleLabel span::before,
+  .navToggleLabel span::after {
+    display: none;
   }
 
   nav {
@@ -140,7 +152,7 @@ nav a:hover {
     height: 5px;
     background: black;
     position: absolute;
-    bottom: -0.75em;
+    top: -.75em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
