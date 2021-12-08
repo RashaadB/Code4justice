@@ -1,3 +1,12 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+}
+
+:root {
+    --background: #3282B8;
+}
+
 body {
     margin: 0;
     background: #1B262C ;
@@ -5,10 +14,7 @@ body {
     font-family: sans-serif;
 
 }
-* {
-    box-sizing:border-box;
-    margin:0;
-}
+
 /* Nav Bar */
 .navBar {
     background: var(--background);
