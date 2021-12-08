@@ -145,25 +145,33 @@ nav a:hover {
     padding: 50px;
     
 }
+.h1{
+    text-align: center;
+}
 .main ul{
     list-style: none;
+    text-align: center;
 }
 .img{
     border-radius: 4%;
 }
-.eventCards{
+.eventCards {
     color: white;
-    
-  
-    
-}
-.eventcardContainer{
-    display: flex;;
+    text-align: center;
+    /* display: flex;
+    gap: 25px; */
+  }
+  .eventcardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
-}
+  }
 
 .popups{
     color: white;
+    text-align: center;
 }
 .popimg{
     border-radius: 4%;
