@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --color-primary: #0f4c75;
+  --color-secondary: #7267cb;
+  --color-extra: #3282B8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  color: #000;
+  background-color: #1b262c;
+}
+
+a {
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+section a {
+  color: #000;
+}
+.box-a img {
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 4%;
+}
+
+/* Navbar */
+
+/* images */
+.box-b img {
+  width: 35%;
+  float: right;
+  margin-right: 5%;
+  border-radius: 4%;
+}
+.box-d img {
+  width: 100%;
+  margin: 0px;
+  padding-top: 0%;
+  border-radius: 4%;
+}
+.box-e img {
+  width: 35%;
+  float: right;
+  margin-right: 40%;
+  border-radius: 4%;
+  float: center;
+}
+/* .box-e {
+  text-align: center;
+    justify-self: center;
+    padding: 40px;
+    margin: 5;
+    margin-left: 0px;
+    float: right;
+} */
+/* .box-e .box-text{
+  text-align: center;
+  justify-self: center;
+  padding: 90px;
+  margin: 0;
+  margin-left: 20px;
+} */
+.box-d .box-text {
+  margin-top: -80%;
+  margin: 10px;
+  text-align: ;
+}
+/* Box */
+
+.box-inner a {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px #000 solid;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+.box-inner a:hover {
+  background-color: rgba(155, 90, 139, 0.719);
+}
+.box {
+  margin: 35px;
+  padding: 25px;
+}
+
+.box {
+  /* margin-bottom: 100px; */
+}
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.box-text-c {
+  float: center;
+  text-align: center;
+  justify-self: center;
+  padding: 60px;
+  margin: 0;
+}
+.box-c img {
+  width: 50%;
+  float: center;
+  display: block;
+  margin: auto;
+  margin-bottom: -3%;
+  border-radius: 4%;
+}
+.box-text-d {
+  text-align: center;
+  justify-self: center;
+  padding: 40%;
+  padding-bottom: 19%;
+  margin-top: -70%;
+  position: absolute;
+  left: -40%;
+  bottom: -2750px;
+}
+.box-text {
+  text-align: center;
+  justify-self: center;
+  padding: 90px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.box-text .btn {
+  margin-top: 20px;
+}
+/* Grid Styles */
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px #000 solid;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+/* Backgrounds */
+.bg-primary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+.bg-secondary {
+  background-color: var(--color-extra);
+  color: #fff;
+}
+.bg-extra {
+  background-color: var(--color-extra);
+  color: #000;
+}
+.bg-dark {
+  background-color: var(--color-primary);
+  color: #000;
+}
+.bg-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+/* Text Styling */
+.text-center {
+  text-align: center;
+}
+.text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-xl-l {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 960px) {
+  .text-xl {
+    font-size: 30px;
+  }
+  .text-lg {
+    font-size: 25px;
+  }
+  .text-md {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
