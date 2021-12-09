@@ -3,7 +3,7 @@
 :root {
   --color-primary: #0f4c75;
   --color-secondary: #7267cb;
-  --color-extra: #3282B8;
+  --color-extra: #3282b8;
 }
 
 * {
@@ -81,7 +81,7 @@ section a {
 .box-d .box-text {
   margin-top: -80%;
   margin: 10px;
-  text-align: ;
+  text-align: center;
 }
 /* Box */
 
@@ -126,6 +126,7 @@ section a {
   margin-bottom: -3%;
   border-radius: 4%;
 }
+
 .box-text-d {
   text-align: center;
   justify-self: center;
@@ -135,6 +136,7 @@ section a {
   position: absolute;
   left: -40%;
   bottom: -2750px;
+  /* bottom: -3850px; */
 }
 .box-text {
   text-align: center;
@@ -228,10 +230,25 @@ section a {
   }
 }
 
-@media (min-width: 1440px) {
-  .box {
-    max-width: 1440px;
+/* @media (max-width 1050px) {
+  .box-text-d {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 90%;
+  } */
+
+@media (max-width: 1050px) {
+  .box .box-text .box-b {
+    max-width: 1050px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .imgtwo {
+    max-width: 1050px;
+    /* margin-left: auto; */
+    height: 100%;
+    margin-top: 30%;
   }
 }

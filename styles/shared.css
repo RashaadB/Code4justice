@@ -8,6 +8,7 @@
   z-index: 999;
   width: 100%;
   top: 0;
+  border-bottom: 5px solid #bbe1fa;
 }
 
 .logo {
@@ -96,6 +97,39 @@ nav a:hover {
 .navToggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
+}
+/* Footer */
+
+.social {
+  margin: top 40px;
+  color: white;
+}
+.social .i {
+  color: white;
+  font-size: 60px;
+  padding: 0px 10px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #3282b8;
+  padding: 0.5rem;
+  top: 0;
+  border-top: 5px solid #bbe1fa;
+  padding: 0.5rem;
+  font-size: 0.5rem;
+}
+
+footer p {
+  margin: 10px;
+  color: white;
+}
+.social-media {
+  padding: 5px 0;
+}
+.social-media a {
+  color: white;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 1300px) {
