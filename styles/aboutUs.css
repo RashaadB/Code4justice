@@ -66,10 +66,10 @@ nav li a {
   text-transform: capitalize;
   text-align: center;
 }
-.content-section .content h3 {
+.content-section .content h2 {
   margin-top: 20px;
   color:#3282B8;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .content-section .mission p {
@@ -113,7 +113,7 @@ nav li a {
 }
 .social .i {
   color: white;
-  font-size: 30px;
+  font-size: 60px;
   padding: 0px 10px;
 }
 footer {
@@ -130,6 +130,14 @@ footer {
 footer p {
   margin: 10px;
   color: white;
+}
+.social-media{
+  padding:5px 0;
+}
+.social-media a {
+  color:white;
+  font-size: 30px;
+
 }
 @media screen and (max-width: 760px){
   .container{
