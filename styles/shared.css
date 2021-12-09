@@ -137,6 +137,11 @@ footer p {
     display: flex;
   }
 
+  .navToggleLabel span,
+  .navToggleLabel span::before,
+  .navToggleLabel span::after {
+    display: none;
+  }
   .navBar {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
