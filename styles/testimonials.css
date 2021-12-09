@@ -136,8 +136,8 @@ nav ul li.active a {
 
 .imageBorder {
     border: 2px solid black;
-    border-radius: 2px solid black;
-    height: 70px;
+    border-radius: 50%;
+    height: 90px;
     width: auto;
 }
 
@@ -149,11 +149,13 @@ nav ul li.active a {
     color: black;
     font-size: 15px;
     padding-left: 10px;
+    text-decoration: underline;
 }
 
 .name {
     font-size: 20px;
     padding-left: 10px;
+    text-decoration: underline;
 }
 
 .quote {
@@ -161,6 +163,8 @@ nav ul li.active a {
     padding-top: 10px;
 }
 
+
+/* Media Queries */
 @media screen and (min-width: 1300px) {
     .navToggleLabel {
         display: none;
@@ -222,5 +226,9 @@ nav ul li.active a {
         padding-block: 2rem;
         width: min(95%, 70rem);
         margin-inline: auto;
+    }
+
+    #slideshow {
+        width: 95%;
     }
 }
